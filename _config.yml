@@ -57,7 +57,7 @@ plugins:
 author:
   name: "Anran Zheng, Hasa Reddy"
   avatar:
-  bio: "Director of Finance, Data, and Policy, Philadelphia Controller"
+  bio: "Sentiment Analysis of COVID-19 Vaccination of United States"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -68,9 +68,7 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+
 
 footer:
   links:
@@ -80,9 +78,7 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+ 
 
 # Defaults
 defaults:
