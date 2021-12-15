@@ -1,31 +1,33 @@
 ---
-title: "Welcome to GitHub Pages!"
-date: 2019-04-18
+title: "Background"
+date: 2021-12-15
+excerpt: "Potential Demand Analysis for Airbnb Users"
 categories:
-  - blog
+  - Introduction
 tags:
-  - Github Page
-  - update
+  - Twitter 
+  - COVID-19 vaccine
+  - Sentiment Analysis
 ---
 
-You'll find this post in your `_posts` directory. Go ahead and edit it and commit your changes to to the repository. GitHub will automatically rebuild your site. Wait a few minutes and then refresh the site link to see the new changes. There are two main ways to make changes to your site:
+![airbnb](https://raw.githubusercontent.com/liziqun/MUSA620_Final_Project/master/assets/photo/airbnb.png)
 
-- Edit files within your in the browser at GitHub.com
-- Clone down your repository and make updates locally, then push them to your GitHub repository.
+**Airbnb** is a platform that enables people to find short to longer-term accommodation. As part of the hospitality network, it doesn't own any of the lodgings displayed on their website or app. It rather acts as a digital marketplace where people looking for a place to stay (guests) can rent an accommodation from an owner (host). For Airbnb host, it is a potentially lucrative option to share their under-utilised vacation homes, spare rooms or even beds. For Airbnb guest,it's also a great opportunity to visit a city with first-hand insights,since most of Airbnb hosts love to share their experiences and recommend their favorite places
 
-**To add new posts:** Add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Although Airbnb has brought many convenience for people, it is still necessary for us to focus on potential demands for both Airbnb hosts and guests. On one hand,  it is difficult for new hosts to ascertain whether the Airbnb will be a worthy investment and how their property could earn more. On the other hand, for those potential Airbnb guests, more specific advice on choosing a staying place might increase their satisfaction with Airbnb.  
 
-Jekyll also offers powerful support for code snippets:
+This project aims to set up a series of mechanism to satisfy the needs of Airbnb users, which could not only served as a guidance for both the Airbnb hosts and guests, but also can be used as an additional function that provided by Airbnb company for those premium users, in order to create more benefits for enterprise.The data used in this project are mainly from [InsideAirbnb][InsideAirbnb], [NYC OpenData][NYC OpenData] and [OpenStreetMap][OpenStreetMap].   
 
-```python
-def print_message(message):
-  print(message)
-
-print_message("Welcome to GitHub Pages")
-```
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll.
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Generally, this project would be devided into 4 parts:
+-  Explorary Analysis of New York Airbnb
+-  Find desirable Neighbourhoods for Airbnb Guests in New York
+-  Find the Characteristics Top-Earned Airbnb for Hosts in New York 
+-  Pricing Tip Prediction for New Hosts in New York 
+   
+      
+For detailed codes about this project, please click [here][here].
+   
+[InsideAirbnb]: http://insideairbnb.com/beijing/?neighbourhood=&filterEntireHomes=false&filterHighlyAvailable=false&filterRecentReviews=false&filterMultiListings=false
+[NYC OpenData]: https://opendata.cityofnewyork.us/
+[OpenStreetMap]: https://www.openstreetmap.org/#map=4/38.01/-95.84
+[here]:https://github.com/liziqun/MUSA620_Final_Project
