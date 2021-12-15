@@ -1,20 +1,44 @@
 ---
-title: "Example: Embedding Matplotlib Images"
-date: 2019-04-17
+title: " Exploratory Analysis of Twitter Data"
+date: 2019-12-11T15:34:30-04:00
 published: true
-tags: [dataviz, matplotlib]
-excerpt: "This is an example blog post that embeds a matplotlib image."
+tags: [python, seaborn, folium, interactive map]
+excerpt: "An Overview of NewYork Airbnb"
+folium-loader:
+  folium-chart-1: ["charts/folium_overview.html", "400"]
+  folium-chart-2: ["charts/folium_countbyneighbor.html", "400"]
 toc: true
 toc_sticky: true
-read_time: false
 ---
 
-# Section 1
+## Data Preparation
+In the very first beginning,we loaded the Airbnb Listing data (from [InsideAirbnb][InsideAirbnb]) and cleaned the original dataset. To be more specific, we removed data that do not contain location information,then transformed datatype of certain fields(*e.g. price,host_response_rate*), and added new field `price_per_person` (*price_per_person=price/accommodates*) into our Airbnb dataset. Also, we loaded New York neighborhood data (from [NYC OpenData][NYC OpenData]), which served as a spatial reference for further analysis.
 
-This is an example post. The posts are written in markdown.
+[InsideAirbnb]: http://insideairbnb.com/beijing/?neighbourhood=&filterEntireHomes=false&filterHighlyAvailable=false&filterRecentReviews=false&filterMultiListings=false
+[NYC OpenData]: https://opendata.cityofnewyork.us/
 
-## Abandoned Cars
+## Spatial  Distribution of New York Airbnb  (folium)
+We visualized the spatial distribution for the New York Airbnb listings. At first sight， most of the Airbnb are located in Manhattan and brooklyn.   
 
-Below, we show the distance between residential sales and the average distance to the 5 nearest 311 calls for abandoned cars.
+<div id="folium-chart-1"></div>   
+      
+Then, we calculated the airbnb count by neighborhood and did spatial join with the Newyork neighborhood data, as can be seen from the following results, the brooklyn seems to have more Airbnb than Manhattan, especially in williamsburg and Bedford-Stuyvesant.   
 
-![distances-abandoned-cars]({{ site.url }}{{ site.baseurl }}/assets/images/distance_to_abandoned_cars.png)
+<div id="folium-chart-2"></div>    
+    
+## Exploratory Analysis of New York Airbnb Dataset (seaborn)
+Below, we plot the histogram of Airbnb Price in New York,and found that most of Airbnb listings ranged from $60 to $160.
+
+![histofprice](https://raw.githubusercontent.com/liziqun/MUSA620_Final_Project/master/assets/images/hist.png)
+
+In terms of the average price by neighbourhood group, the Manhattan and Brooklin is much higher than Queens, Staten Island and Bronx, which explains why there are more Airbnbs in these two areas.  
+
+![boxprice](https://raw.githubusercontent.com/liziqun/MUSA620_Final_Project/master/assets/images/box.png)
+
+Is Airbnb price and the number of Reviews per month related with each other? The following figure tells us that the more reviews there are, the lower the price of the Airbnb might be, which means that cheaper Airbnb seems to have higher occupancy rate. Besides, the price of entire home is much higher than private room.  
+
+![scatter](https://raw.githubusercontent.com/liziqun/MUSA620_Final_Project/master/assets/images/scatter_price_reviews.png)
+
+Then, we also explored the relationship between `host_year` (the year that host opened the Airbnb) and the count of different Airbnb types.There is a general upward trend of new Airbnb listings, and both of the entire apt and private room seems to have a absolute big market share. Besides, an interesting finding is that the private room seems to have become a more popular chioce than the entire home for Airbnb host since 2015.   
+
+![linecount](https://raw.githubusercontent.com/liziqun/MUSA620_Final_Project/master/assets/images/line_count.png)
