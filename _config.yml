@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "MUSA 550"
+title: "MUSA 550 Final Project"
 email:
-description: "Geospatial Data Science in Python"
+description: "Sentiment Analysis of COVID-19 Vaccination of United States"
 twitter_username:
 github_username:
 minimal_mistakes_skin: default
@@ -55,7 +55,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name: "Nick Hand"
+  name: "Anran Zheng, Hasa Reddy"
   avatar:
   bio: "Director of Finance, Data, and Policy, Philadelphia Controller"
   links:
