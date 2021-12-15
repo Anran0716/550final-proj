@@ -1,5 +1,5 @@
 ---
-title: "Pricing Tip Prediction for New Hosts in New York "
+title: "Machine learning "
 date: 2019-12-08T15:34:30-04:00
 published: true
 tags: [marching learning, model validation]
