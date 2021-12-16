@@ -1,5 +1,5 @@
 ---
-title: " Exploratory Analysis of Twitter Data"
+title: " Data collection and preprocessing"
 date: 2019-12-11T15:34:30-04:00
 published: true
 tags: [python, seaborn, folium, interactive map]
