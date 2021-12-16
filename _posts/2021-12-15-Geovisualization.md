@@ -1,5 +1,5 @@
 ---
-title: "Example: Embedding Folium charts"
+title: "Geovisualization"
 date: 2019-04-13
 published: true
 tags: [dataviz, folium]
