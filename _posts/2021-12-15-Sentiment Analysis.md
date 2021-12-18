@@ -1,6 +1,6 @@
 ---
-title: "Example: Embedding Altair & Hvplot Charts"
-date: 2019-04-13
+title: "Sentiment Analysis"
+date: 2021-12-18
 published: true
 tags: [dataviz, altair, hvplot, holoviews]
 excerpt: "Embedding interactive charts on static pages using Jekyll."
