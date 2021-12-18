@@ -2,11 +2,8 @@
 title: " Data collection and preprocessing"
 date: 2019-12-11T15:34:30-04:00
 published: true
-tags: [python, Tweepy, TextBlob]
+tags: [python, Tweepy, TextBlob, matplotlib]
 excerpt: "Collect and clean Twitter Data"
-folium-loader:
-  folium-chart-1: ["charts/folium_overview.html", "400"]
-  folium-chart-2: ["charts/folium_countbyneighbor.html", "400"]
 toc: true
 toc_sticky: true
 ---
@@ -24,6 +21,8 @@ add jupyter notebook link for collecting historical and new Twitter API here.
 Below, we plot the histogram of Airbnb Price in New York,and found that most of Airbnb listings ranged from $60 to $169. (Hasa)
 
 add pictures here
+![distances-abandoned-cars]({{ site.url }}{{ site.baseurl }}/assets/images/distance_to_abandoned_cars.png)
+
 ![histofprice](https://raw.githubusercontent.com/liziqun/MUSA620_Final_Project/master/assets/images/hist.png)
 
 In terms of the average price by neighbourhood group, the Manhattan and Brooklin is much higher than Queens, Staten Island and Bronx, which explains why there are more Airbnbs in these two areas.  
