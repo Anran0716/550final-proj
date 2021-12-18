@@ -7,7 +7,7 @@ excerpt: "Embedding interactive charts on static pages using Jekyll."
 altair-loader:
   altair-chart-1: "charts/measlesAltair.json"
 hv-loader:
-  hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the height
+  hv-chart-1: ["charts/senti_month_line.html", "500"] # second argument is the height
 toc: true
 toc_sticky: true
 ---
@@ -18,7 +18,7 @@ This post will show examples of embedding interactive charts produced using [Alt
 
 Below is a chart of the incidence of measles since 1928 for the 50 US states.(Hasa)
 
-<div id="altair-chart-1"></div>
+<div id="hv-chart-1"></div>
 
 This was produced using Altair and embedded in this static web page. Note that you can also display Python code on this page:
 
