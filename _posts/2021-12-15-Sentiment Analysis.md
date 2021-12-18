@@ -4,8 +4,7 @@ date: 2021-12-15
 published: true
 tags: [plotly, nrclex, hvplot, holoviews]
 excerpt: "Embedding interactive charts on static pages using Jekyll."
-altair-loader:
-  altair-chart-1: "charts/measlesAltair.json"
+
 hv-loader:
   hv-chart-1: ["charts/senti_month_line.html", "500"] # second argument is the height
 toc: true
