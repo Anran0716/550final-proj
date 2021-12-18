@@ -3,7 +3,7 @@ title: "Sentiment Analysis"
 date: 2021-12-18
 published: true
 tags: [dataviz, altair, hvplot, holoviews]
-excerpt: "Embedding interactive charts on static pages using Jekyll."
+excerpt: "Sentiment and emotional changes of people's atittude towards COVID vaccines"
 hv-loader:
   hv-chart-1: ["charts/senti_month_line.html"] 
   hv-chart-2: ["charts/by_senti_bar.html"] 
