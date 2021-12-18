@@ -2,8 +2,8 @@
 title: " Data collection and preprocessing"
 date: 2019-12-11T15:34:30-04:00
 published: true
-tags: [python, seaborn, folium, interactive map]
-excerpt: "An Overview of NewYork Airbnb"
+tags: [python, Tweepy, TextBlob]
+excerpt: "Collect and clean Twitter Data"
 folium-loader:
   folium-chart-1: ["charts/folium_overview.html", "400"]
   folium-chart-2: ["charts/folium_countbyneighbor.html", "400"]
@@ -11,24 +11,19 @@ toc: true
 toc_sticky: true
 ---
 
-## Data Preparation
-In the very first beginning,we loaded the Airbnb Listing data (from [InsideAirbnb][InsideAirbnb]) and cleaned the original dataset. To be more specific, we removed data that do not contain location information,then transformed datatype of certain fields(*e.g. price,host_response_rate*), and added new field `price_per_person` (*price_per_person=price/accommodates*) into our Airbnb dataset. Also, we loaded New York neighborhood data (from [NYC OpenData][NYC OpenData]), which served as a spatial reference for further analysis.
+## Data collection
+In the very first beginning,we loaded the Airbnb Listing data (from [InsideAirbnb][InsideAirbnb]) and cleaned the original dataset. To be more specific, we removed data that do not contain location information,then transformed datatype of certain fields(*e.g. price,host_response_rate*), and added new field `price_per_person` (*price_per_person=price/accommodates*) into our Airbnb dataset. Also, we loaded New York neighborhood data (from [NYC OpenData][NYC OpenData]), which served as a spatial reference for further analysis. (Hasa)
+
+add jupyter notebook link for collecting historical and new Twitter API here.
 
 [InsideAirbnb]: http://insideairbnb.com/beijing/?neighbourhood=&filterEntireHomes=false&filterHighlyAvailable=false&filterRecentReviews=false&filterMultiListings=false
 [NYC OpenData]: https://opendata.cityofnewyork.us/
 
-## Spatial  Distribution of New York Airbnb  (folium)
-We visualized the spatial distribution for the New York Airbnb listings. At first sight， most of the Airbnb are located in Manhattan and brooklyn.   
-
-<div id="folium-chart-1"></div>   
-      
-Then, we calculated the airbnb count by neighborhood and did spatial join with the Newyork neighborhood data, as can be seen from the following results, the brooklyn seems to have more Airbnb than Manhattan, especially in williamsburg and Bedford-Stuyvesant.   
-
-<div id="folium-chart-2"></div>    
     
-## Exploratory Analysis of New York Airbnb Dataset (seaborn)
-Below, we plot the histogram of Airbnb Price in New York,and found that most of Airbnb listings ranged from $60 to $160.
+## Data Preprocessing
+Below, we plot the histogram of Airbnb Price in New York,and found that most of Airbnb listings ranged from $60 to $169. (Hasa)
 
+add pictures here
 ![histofprice](https://raw.githubusercontent.com/liziqun/MUSA620_Final_Project/master/assets/images/hist.png)
 
 In terms of the average price by neighbourhood group, the Manhattan and Brooklin is much higher than Queens, Staten Island and Bronx, which explains why there are more Airbnbs in these two areas.  
