@@ -56,7 +56,7 @@ plugins:
 
 author:
   name: "Anran Zheng, Hasa Reddy"
-  avatar:"assets/photo/logo.PNG"
+  avatar:
   bio: "Sentiment Analysis of COVID-19 Vaccination of United States"
   links:
     - label: "Website"
