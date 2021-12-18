@@ -1,7 +1,7 @@
 ---
 title: "Background"
 date: 2021-12-15
-excerpt: "Potential Demand Analysis for Airbnb Users"
+excerpt: "How people feel about COVID-19 vaccine?"
 categories:
   - Introduction
 tags:
@@ -10,7 +10,7 @@ tags:
   - Sentiment Analysis
 ---
 
-![airbnb](https://raw.githubusercontent.com/liziqun/MUSA620_Final_Project/master/assets/photo/airbnb.png)
+![logo]({{ site.url }}{{ site.baseurl }}/assets/images/logo.png)
 
 **Airbnb** is a platform that enables people to find short to longer-term accommodation. As part of the hospitality network, it doesn't own any of the lodgings displayed on their website or app. It rather acts as a digital marketplace where people looking for a place to stay (guests) can rent an accommodation from an owner (host). For Airbnb host, it is a potentially lucrative option to share their under-utilised vacation homes, spare rooms or even beds. For Airbnb guest,it's also a great opportunity to visit a city with first-hand insights,since most of Airbnb hosts love to share their experiences and recommend their favorite places
 
@@ -30,4 +30,4 @@ For detailed codes about this project, please click [here][here].
 [InsideAirbnb]: http://insideairbnb.com/beijing/?neighbourhood=&filterEntireHomes=false&filterHighlyAvailable=false&filterRecentReviews=false&filterMultiListings=false
 [NYC OpenData]: https://opendata.cityofnewyork.us/
 [OpenStreetMap]: https://www.openstreetmap.org/#map=4/38.01/-95.84
-[here]:https://github.com/liziqun/MUSA620_Final_Project
+[here]:https://github.com/Anran0716/550final-proj
