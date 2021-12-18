@@ -2,7 +2,7 @@
 title: "Machine learning "
 date: 2019-12-08T15:34:30-04:00
 published: true
-tags: [marching learning, model validation]
+tags: [marching learning, model validation,skilearn]
 excerpt: "A Random Forest Model was Build to Predict the Airbnb Price for New Airbnb Hosts."
 hv-loader:
   hv-chart-1: "charts/importance_bar.html"
