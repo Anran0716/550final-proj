@@ -2,7 +2,7 @@
 title: "Sentiment Analysis"
 date: 2021-12-15
 published: true
-tags: [plotly, nrclex, hvplot, holoviews]
+tags: [plotly, nrclex, hvplot, holoviews,dataviz]
 excerpt: "Embedding interactive charts on static pages using Jekyll."
 
 hv-loader:
