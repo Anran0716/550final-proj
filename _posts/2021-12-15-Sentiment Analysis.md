@@ -2,7 +2,7 @@
 title: "Sentiment Analysis"
 date: 2021-12-15
 published: true
-tags: [dataviz, altair, hvplot, holoviews]
+tags: [plotly, nrclex, hvplot, holoviews]
 excerpt: "Embedding interactive charts on static pages using Jekyll."
 altair-loader:
   altair-chart-1: "charts/measlesAltair.json"
@@ -12,11 +12,11 @@ toc: true
 toc_sticky: true
 ---
 
-This post will show examples of embedding interactive charts produced using [Altair](https://altair-viz.github.io) and [Hvplot](https://hvplot.pyviz.org/).
+This post will show examples of embedding interactive charts produced using [Altair](https://altair-viz.github.io) and [Hvplot](https://hvplot.pyviz.org/). (Hasa)
 
-## Altair Example
+## Sentiment type
 
-Below is a chart of the incidence of measles since 1928 for the 50 US states.
+Below is a chart of the incidence of measles since 1928 for the 50 US states.(Hasa)
 
 <div id="altair-chart-1"></div>
 
@@ -27,9 +27,9 @@ import altair as alt
 alt.renderers.enable('notebook')
 ```
 
-## HvPlot Example
+## Emotional type
 
-Lastly, the measles incidence produced using the HvPlot package:
+Lastly, the measles incidence produced using the HvPlot package:(Hasa)
 
 <div id="hv-chart-1"></div>
 
