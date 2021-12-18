@@ -4,8 +4,6 @@ date: 2019-12-08T15:34:30-04:00
 published: true
 tags: [marching learning, model validation,skilearn]
 excerpt: "Find out the best model to Predict the postive tweets"
-hv-loader:
-  hv-chart-1: "charts/importance_bar.html"
 toc: true
 toc_sticky: true
 ---
