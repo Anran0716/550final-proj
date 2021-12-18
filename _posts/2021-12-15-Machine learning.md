@@ -79,7 +79,7 @@ y_pred4 = knn.predict(X_test_dtm)
  
  picture for confusion matrix.  
  
-<div id="hv-chart-1"></div>
+![CM]({{ site.url }}{{ site.baseurl }}/assets/images/CM.PNG)
 
 ## Validation  
 For the test set, we calculated the predicted price, percent error as well as absolute percent error for each observation.
@@ -94,3 +94,5 @@ rf_clf.predict_proba(test_sentence)
 To further examine the spatial autocorrelation, we visualized the spatial distribution of the percent error , as well as the mean absolute percet error by neighborhood in test set. It is clearly that the errors of prediction Airbnb price have few spatial cluster (i.e.The ones with high error are clustered together, and so do the ones with low error), which means the effects of spatial autocorrelation have reduced a lot.
      
 Overall, though remaining a few flaws in our model, we still believe that this model will perform well in Airbnb which enjoys a wider range of data collection channels.This new pricing guide feature could be attached in User Interface, and hosts that subscribe this feature could be charged in reasonable price. (Hasa)
+
+- See the code of [Machine Learning](https://github.com/Anran0716/550final-proj/blob/main/code/ML.ipynb).
