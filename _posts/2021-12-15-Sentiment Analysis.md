@@ -7,6 +7,8 @@ excerpt: "Embedding interactive charts on static pages using Jekyll."
 
 hv-loader:
   hv-chart-1: ["charts/senti_month_line.html"] # second argument is the height
+  hv-chart-2: ["charts/by_senti_bar.html"] # second argument is the height
+  hv-chart-3: ["charts/emo_month_line.html"] # second argument is the height
 toc: true
 toc_sticky: true
 ---
@@ -19,6 +21,8 @@ Below is a chart of the incidence of measles since 1928 for the 50 US states.(Ha
 
 <div id="hv-chart-1"></div>
 
+<div id="hv-chart-2"></div>
+
 This was produced using Altair and embedded in this static web page. Note that you can also display Python code on this page:
 
 ```python
@@ -30,7 +34,9 @@ alt.renderers.enable('notebook')
 
 Lastly, the measles incidence produced using the HvPlot package:(Hasa)
 
-<div id="hv-chart-1"></div>
+insert pylot here
+
+<div id="hv-chart-3"></div>
 
 ## Notes
 
