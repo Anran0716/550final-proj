@@ -6,7 +6,7 @@ tags: [plotly, nrclex, hvplot, holoviews,dataviz]
 excerpt: "Embedding interactive charts on static pages using Jekyll."
 
 hv-loader:
-  hv-chart-1: ["charts/senti_month_line.html", "700"] # second argument is the height
+  hv-chart-1: ["charts/senti_month_line.html"] # second argument is the height
 toc: true
 toc_sticky: true
 ---
