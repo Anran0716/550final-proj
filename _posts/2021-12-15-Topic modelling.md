@@ -1,26 +1,25 @@
 ---
 title: "Topic modelling"
-date: 2019-04-13
+date: 2021-12-18
 published: true
 tags: [dataviz, folium]
-excerpt: "Embedding interactive Folium charts on static pages using Jekyll."
-folium-loader:
-  folium-chart-1: ["charts/foliumChart.html", "400"] # second argument is the height
-  folium-chart-2: ["charts/percent_no_internet.html", "400"] # second argument is the height
+excerpt: "The most frequent words in tweets about COVID-19 vaccines"
+hv-loader:
+  hv-chart-1: ["charts/top_words.html","700"] 
 toc: true
 toc_sticky: true
 ---
 
-This post will show examples of embedding interactive maps produced using [Folium](https://github.com/python-visualization/folium).
+This post will show examples of embedding interactive maps produced using [Folium](https://github.com/python-visualization/folium). (Hasa)
 
-## OSMnx and Street Networks
+## Wordcloud
 
-The shortest route between the Art Museum and the Liberty Bell:
+The shortest route between the Art Museum and the Liberty Bell: (Hasa)
 
-<div id="folium-chart-1"></div>
+![wordcloud]({{ site.url }}{{ site.baseurl }}/assets/images/wordcloud.PNG)
 
-## Percentage of Households without Internet
+## Top frequent words
 
-<div id="folium-chart-2"></div>
+<div id="hv-chart-1"></div>
 
-See the [lecture 9B slides](https://musa-550-fall-2021.github.io/slides/lecture-9B.html) and the [lecture 10A slides](https://musa-550-fall-2021.github.io/slides/lecture-10A.html) for the code that produced these plots.
+- See the [Topic modelling](https://github.com/Anran0716/550final-proj/blob/main/code/WordCloudBarGraph.ipynb) for the code that produced these plots.
