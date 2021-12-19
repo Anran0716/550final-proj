@@ -20,7 +20,7 @@ Let’s start off with understanding the terms `polarity` and `subjectivity` in 
 
 <div id="hv-chart-2"></div>
 
- We used **carto** to visualize [the distribution of polarity and subjectivity across US States](https://greatersydney.carto.com/u/gsc-admin/builder/47973832-7cb4-456e-885d-3be30d261710/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B9.44906182688142%2C-208.30078125%5D%2C%22sw%22%3A%5B74.35482803013984%2C-36.73828125000001%5D%2C%22center%22%3A%5B52.30899026478586%2C-122.51953125000001%5D%2C%22zoom%22%3A3%7D%7D).
+ We also used **carto** to visualize [the distribution of polarity and subjectivity across US States](https://greatersydney.carto.com/u/gsc-admin/builder/47973832-7cb4-456e-885d-3be30d261710/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B9.44906182688142%2C-208.30078125%5D%2C%22sw%22%3A%5B74.35482803013984%2C-36.73828125000001%5D%2C%22center%22%3A%5B52.30899026478586%2C-122.51953125000001%5D%2C%22zoom%22%3A3%7D%7D).
 ## Emotional type
 
 Then we perform emotional analysis with **NRCLex** on primary emotion types, such as fear, anger, anticipation, trust, surprise, positive, negative, neutral, sadness, disgust and joy.
