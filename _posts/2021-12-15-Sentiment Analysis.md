@@ -37,10 +37,9 @@ def emotion(x):
 
 import nltk
 import string 
-#can't apply nrclex to format text?
 senti_data['Emotion'] = senti_data['text'].apply(emotion)
 ```
-Understanding the emotional analysis, from our emotional tree. 46% of the tweets are express positively towards the vaccine, that is almost half the tweets. Following positive emotion, is fear and trust being the at 19% and 15% respectively. Our analysis is not very clearly indicating the nature of the trust if its positive or trust against the vaccine and hence we are not able to fully comment on it. 19% fear the vaccine is something of concern and would be helpful to have some educational and awareness programs to help this segment. 
+From our emotional tree created by **Ploty**, 46% of the tweets are express positively towards the vaccine, that is almost half the tweets. Following positive emotion, is fear and trust being the at 19% and 15% respectively. Our analysis is not very clearly indicating the nature of the trust if its positive or trust against the vaccine and hence we are not able to fully comment on it. 19% fear the vaccine is something of concern and would be helpful to have some educational and awareness programs to help this segment. 
 
 ![emotional_tree]({{ site.url }}{{ site.baseurl }}/assets/images/emotional_tree.png)
 
