@@ -7,7 +7,7 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-	
+
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -100,11 +100,11 @@ author_profile: true
 comments: # true
 share: true
 related: true
-	# category_archive:
-	#   type: liquid
-	#   path: /categories/
-	# tag_archive:
-	#   type: liquid
-	#   path: /tags/
+# category_archive:
+#   type: liquid
+#   path: /categories/
+# tag_archive:
+#   type: liquid
+#   path: /tags/
 
 
