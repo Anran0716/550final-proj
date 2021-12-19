@@ -5,7 +5,7 @@ published: true
 tags: [dataviz, folium]
 excerpt: "The most frequent words in tweets about COVID-19 vaccines"
 hv-loader:
-  hv-chart-1: ["charts/top_words.html","700"] 
+  hv-chart-1: ["charts/top_words.html"] 
 toc: true
 toc_sticky: true
 ---
@@ -19,6 +19,8 @@ The shortest route between the Art Museum and the Liberty Bell: (Hasa)
 ![wordcloud]({{ site.url }}{{ site.baseurl }}/assets/images/wordcloud.PNG)
 
 ## Top frequent words
+
+Put some words here (Hasa）
 
 <div id="hv-chart-1"></div>
 
