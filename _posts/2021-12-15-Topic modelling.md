@@ -2,7 +2,7 @@
 title: "Topic modelling"
 date: 2021-12-18
 published: true
-tags: [dataviz, folium]
+tags: [dataviz, wordcloud, hvplot]
 excerpt: "The most frequent words in tweets about COVID-19 vaccines"
 hv-loader:
   hv-chart-1: ["charts/top_words.html"] 
