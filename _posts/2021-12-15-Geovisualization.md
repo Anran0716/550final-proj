@@ -25,7 +25,7 @@ ax.axis('off')
 us_centroid.plot(ax=ax, marker='*', color='red', markersize=1)
 merged_emo.plot(ax=ax, facecolor="none", linewidth=0.4, edgecolor='0')
 ```    
-![swm]({{ site.url }}{{ site.baseurl }}/assets/images/swm.png)
+![swm]({{ site.url }}{{ site.baseurl }}/assets/images/swm.PNG)
 
 ```python
 swm5 = KNN.from_dataframe(merged_emo, k=5)
