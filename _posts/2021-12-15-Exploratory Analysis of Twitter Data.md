@@ -1,5 +1,5 @@
 ---
-title: " Data collection and preprocessing"
+title: " Data collection and processing"
 date: 2021-12-14
 published: true
 tags: [python, Tweepy, TextBlob, matplotlib]
