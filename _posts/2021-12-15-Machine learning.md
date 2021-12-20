@@ -8,13 +8,9 @@ toc: true
 toc_sticky: true
 ---
 
-In this part, we decided to build a machine learning model to help the new Airbnb hosts set their price. (Hasa)
-
-A picture showing the workflow of ML.  
 
 ## Data Processing
-The first step of data processing is handling outliers. 
-We examined the price distribution, filtered the outliers, as well as removed the  NA value of potential features. The final dataset contains 26624 observations.     
+This study devises a sentimental analyzer to identify Tweets test sentiment, whether positive or not. Because the input of machine learning model should be numeric, in the first place we need to transform the sentiment type (y-variable) and tweet text (x_variable) into numeric types. We set 'negative' to 0, neutural to '1' while positive to '5'. Then for tweet text, **CountVectorizer** is applied to transform the text to array format. 
   
 ```python
 tweets_df['senti_label']=tweets_df.Sentiment.apply(lambda x: 0 if 'Negative'in x else 1 if 'Netural' else 5)
@@ -26,7 +22,8 @@ X_train,X_test,y_train,y_test=train_test_split(X_fin,y,test_size=0.3, random_sta
 ```    
 
 ## Compare with different models
-We selected several potential variables that might influence the price of Airbnband, and loaded the data from NY opendata and OSM, including the crime data, 311 requests data, university, subway and attractions. (Hasa)
+ 
+ Several models, including logistic regression, K Nearest Neighbor, SVM, random forest, were built, trained and compared. The one with the highest accuracy, recognized as the randomforest, will be chosen as the most optimal one. 
 
 **Random forest**  
 
@@ -80,7 +77,7 @@ y_pred4 = knn.predict(X_test_dtm)
 ![CM]({{ site.url }}{{ site.baseurl }}/assets/images/CM.PNG)
 
 ## Validation  
-For the test set, we calculated the predicted price, percent error as well as absolute percent error for each observation.
+To further evaluate its performance, a random sentence that contains obvious positive sentiment words is chosen, and the results shows that its positive probability is 86.88%, while 13.11% for negative. We believe the accuracy of model can be further enhanced in the future.  
 ```python
 rf_clf.fit(x1,y1)
 test_sentence = vectorizer.transform(['I love covidvaccine!'])
@@ -88,9 +85,5 @@ rf_clf.predict_proba(test_sentence)
 ```
 
 > array([[0.13118602, 0.86881398]])   
-
-To further examine the spatial autocorrelation, we visualized the spatial distribution of the percent error , as well as the mean absolute percet error by neighborhood in test set. It is clearly that the errors of prediction Airbnb price have few spatial cluster (i.e.The ones with high error are clustered together, and so do the ones with low error), which means the effects of spatial autocorrelation have reduced a lot.
-     
-Overall, though remaining a few flaws in our model, we still believe that this model will perform well in Airbnb which enjoys a wider range of data collection channels.This new pricing guide feature could be attached in User Interface, and hosts that subscribe this feature could be charged in reasonable price. (Hasa)
 
 - See the code of [Machine Learning](https://github.com/Anran0716/550final-proj/blob/main/code/ML.ipynb).
