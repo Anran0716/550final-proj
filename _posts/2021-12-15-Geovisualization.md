@@ -5,17 +5,17 @@ published: true
 tags: [dataviz, pysal,geopandas,hvplot]
 excerpt: "Where postive and negative tweets come from"
 hv-loader:
-  hv-chart-1: ["charts/pos_moran.html","500"] 
-  hv-chart-2: ["charts/neg_moran.html","500"] 
+  hv-chart-1: ["charts/pos_moran.html","400"] 
+  hv-chart-2: ["charts/neg_moran.html","400"] 
 toc: true
 toc_sticky: true
 ---
 
-Introduce global/spatial Moran's I and Pysal package.(Hasa)
+Finally we conducted spatial analysis of positive and negative emotions by calculating their spatial autocorrelations with **Pysal** for tweets across US. The geographic data of US is collected from [GISMAP](https://map.igismap.com/gis-data/united%20states%20of%20america/administrative%20state%20boundaries). Tweet data is processed and joined with US map. 
 
 ## Build spatial weight matrix
 
-see reference [here](http://jurgens.people.si.umich.edu/tutorials/Mapping_Word_Frequencies_on_Twitter_using_Python.html): (Hasa)
+Spatial weight matrix is first built by finding the 5 nearest neighbours (here k=5).
 
 ```python
 us_centroid = merged_emo[['geometry']].copy()
@@ -28,10 +28,14 @@ merged_emo.plot(ax=ax, facecolor="none", linewidth=0.4, edgecolor='0')
 ![swm]({{ site.url }}{{ site.baseurl }}/assets/images/swm.PNG)
 
 ```python
+#k-nearest neighbour
 swm5 = KNN.from_dataframe(merged_emo, k=5)
 ```
 
 ## the Global Moran's I
+
+The Spatial Autocorrelation tool measures spatial autocorrelation based on both feature locations and feature values simultaneously. Given a set of features and an associated attribute, it evaluates whether the pattern expressed is clustered, dispersed, or random. The tool calculates the Moran's I Index value and both a a z-score and p-value to evaluate the significance of that Index.  P-values are numerical approximations of the area under the curve for a known distribution, limited by the test statistic.  
+The Global Moran's I for both positive and negative tweets are around 0.2, with P-value smaller than 0.05. This suggests that the spatial autocorrelation of both positive and negative tweets is week at global scale.
 
 ```python
 pos_mi = Moran(merged_emo.positive, swm5)
@@ -50,6 +54,8 @@ print("Global Moran's p-value: %0.19f" % neg_mi.p_norm)
 >Global Moran's p-value: 0.0150793448129815655
 
 ## Local Moran's I
+
+The Local Moran’s Maps in Spatial Analysis of Positive and Negative tweets are plotted, where both positive (upper) and negative (lower) tweets behave strong spatial autocorrelation in the east coast, while in the west this relationship is week.
 
 ```python
 gol = pysal.explore.esda.G_Local(merged_emo['positive'], swm5, transform='B')
