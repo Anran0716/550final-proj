@@ -1,6 +1,6 @@
 ---
 title: "Machine learning "
-date: 2021-12-19T15:34:30-04:00
+date: 2021-12-11
 published: true
 tags: [marching learning, model validation,skilearn]
 excerpt: "Find out the best model to Predict the postive tweets"
