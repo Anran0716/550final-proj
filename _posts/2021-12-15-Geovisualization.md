@@ -11,7 +11,7 @@ toc: true
 toc_sticky: true
 ---
 
-Finally we conducted spatial analysis of positive and negative emotions by calculating their spatial autocorrelations with **Pysal** for tweets across US. The geographic data of US is collected from [GISMAP](https://map.igismap.com/gis-data/united%20states%20of%20america/administrative%20state%20boundaries). Tweet data is processed and joined with US map. 
+Finally we conducted spatial analysis of positive and negative emotions by calculating their spatial autocorrelations with **Pysal** for tweets across US. 
 
 ## Build spatial weight matrix
 
