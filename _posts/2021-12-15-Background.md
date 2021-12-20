@@ -1,7 +1,7 @@
 ---
 title: "Background"
 date: 2021-12-19
-excerpt: "How do people feel about COVID-19 vaccine?"
+excerpt: "What do people think of COVID-19 vaccine?"
 categories:
   - Introduction
 tags:
