@@ -1,19 +1,15 @@
-# github-pages-starter
+# Sentiment Analysis of COVID-19 Vaccination of United States
 
-A template for including data visualizations in a Jekyll-powered blog with Github Pages.
+**Anran Zheng, Hasa Reddy**     
+  
+**MUSA 550, Final Project**    
+**December 19, 2021**  
 
-[DEMO](https://musa-550-fall-2021.github.io/github-pages-starter/)
+The introduction of COVID-19 vaccination has proven to be helpful in limiting the disease. Therefore, more people are encouraged to keep a positive attitude towards this and take the vaccination. It’s important for governments to understand the potential drivers that affect public attitudes towards COVID-19 vaccines based on social media, which generates abundant user-based data. Based on Twitter users, this project analyzed public attitude towards COVID-19 vaccines in United States, with four aspects of analysis: 
+- Sentiment and emotional analysis
+- Keyword modeling and cloud mapping 
+- Predict the sentiment from tweets with machine learning
+- Spatial analysis of the tweets - positive and negative  
 
-## Steps
+For web-based page, please click: https://anran0716.github.io/550final-proj/
 
-- Click on the "Use this template" button to create a new repository.
-- Choose a new name for your new repository
-- Go to the Settings section of your new repository, scroll down to the "Github Pages" section, and select the "Main" as the branch to be used for GitHub pages. This will automatically build the website.
-- Customize your site
-  - Enter your site name, description, etc by editing the `_config.yml` file.
-  - There are two different ways that you can make changes to your blog's files:
-    - Edit files within your in the browser at GitHub.com
-    - Clone down your repository and make updates locally, then push them to your GitHub repository.
-- Publish a post
-  - Posts are written in Markdown and any files added to the `_posts` directory will be automatically uploaded and published
-  - Useful resource: [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/)
