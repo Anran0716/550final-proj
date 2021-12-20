@@ -1,6 +1,6 @@
 ---
 title: "Topic modelling"
-date: 2021-12-18
+date: 2021-12-17
 published: true
 tags: [dataviz, wordcloud, hvplot]
 excerpt: "Most frequent words in tweets about COVID-19 vaccines"
