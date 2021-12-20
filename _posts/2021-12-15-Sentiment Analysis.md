@@ -5,9 +5,9 @@ published: true
 tags: [dataviz, altair, hvplot, holoviews]
 excerpt: "Sentiment and emotional changes of people's atittude towards COVID vaccines"
 hv-loader:
-  hv-chart-1: ["charts/senti_month_line.html","250"] 
-  hv-chart-2: ["charts/by_senti_bar.html","250"] 
-  hv-chart-3: ["charts/emo_month_line.html","250"] 
+  hv-chart-1: ["charts/senti_month_line.html","300"] 
+  hv-chart-2: ["charts/by_senti_bar.html","300"] 
+  hv-chart-3: ["charts/emo_month_line.html","300"] 
 toc: true
 toc_sticky: true
 ---
