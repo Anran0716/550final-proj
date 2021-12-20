@@ -1,6 +1,6 @@
 ---
 title: "Sentiment Analysis"
-date: 2021-12-18
+date: 2021-12-13
 published: true
 tags: [dataviz, altair, hvplot, holoviews]
 excerpt: "Sentiment and emotional changes of people's atittude towards COVID vaccines"
