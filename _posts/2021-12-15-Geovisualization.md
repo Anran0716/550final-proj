@@ -3,7 +3,7 @@ title: "Spatial Analysis of Positive and Negative tweets"
 date: 2021-12-10
 published: true
 tags: [dataviz, pysal,geopandas,hvplot]
-excerpt: "Where postive and negative tweets come from"
+excerpt: "Understand spatial distribution of the tweets (positive and negative)"
 hv-loader:
   hv-chart-1: ["charts/pos_moran.html","400"] 
   hv-chart-2: ["charts/neg_moran.html","400"] 
