@@ -47,5 +47,9 @@ From our Emotional line graph, we can tell the reaction had been very positive o
 
 <div id="hv-chart-3"></div>
 
-- See the code for [Sentiment Analysis](https://github.com/Anran0716/550final-proj/blob/main/code/Sentiment%20analysis.ipynb).
+Then emotional maps are created. The geographic data of US is collected from [GISMAP](https://map.igismap.com/gis-data/united%20states%20of%20america/administrative%20state%20boundaries). Tweet data is processed and joined with US map. 
+
+![emotional_map]({{ site.url }}{{ site.baseurl }}/assets/images/emo_maps.PNG)
+
+- See the code for [Sentiment Analysis](https://github.com/Anran0716/550final-proj/blob/main/code/Sentiment%20analysis.ipynb) and [emotional maps](https://github.com/Anran0716/550final-proj/blob/main/code/spatial%20analysis.ipynb) for the code that produced these plots.
 
