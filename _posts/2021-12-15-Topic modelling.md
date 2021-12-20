@@ -5,7 +5,7 @@ published: true
 tags: [dataviz, wordcloud, hvplot]
 excerpt: "Most frequent words in tweets about COVID-19 vaccines"
 hv-loader:
-  hv-chart-1: ["charts/top_words.html", "550"] 
+  hv-chart-1: ["charts/top_words.html", "600"] 
 toc: true
 toc_sticky: true
 ---
