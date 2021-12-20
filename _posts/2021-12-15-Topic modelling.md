@@ -5,22 +5,23 @@ published: true
 tags: [dataviz, wordcloud, hvplot]
 excerpt: "Most frequent words in tweets about COVID-19 vaccines"
 hv-loader:
-  hv-chart-1: ["charts/top_words.html", "700"] 
+  hv-chart-1: ["charts/top_words.html", "500"] 
 toc: true
 toc_sticky: true
 ---
 
-This post will show examples of embedding interactive maps produced using [Folium](https://github.com/python-visualization/folium). (Hasa)
 
 ## Wordcloud
 
-The shortest route between the Art Museum and the Liberty Bell: (Hasa)
+[Text mining](https://en.wikipedia.org/wiki/Text_mining) is the process of extracting high-quality information from text. [Topic modeling](https://provalisresearch.com/blog/topic-modeling/) is also a form of text mining which employs statistical machine learning techniques to identify patterns in large amounts of text. It can take your huge collection of documents and group the words into clusters of words, identify topics, by a using process of similarity.   
+In our project we use text mining and topic modeling, to identify the most recurring words from our dataset (all the tweets we have extracted between 1st Jan 2021 to 14th December  2021, and while excluding the most common words sets like ‘a’ ‘the’ ‘if’ etc.,). Based on this we are able to decipher – positive, negative and neutral words and mindsets associated with the vaccine. We further visualise this into 3 different word colour based on this interpretation. 
 
 ![wordcloud]({{ site.url }}{{ site.baseurl }}/assets/images/wordcloud.PNG)
 
 ## Top frequent words
 
-Put some words here (Hasa）
+To better understand which are the most used words in each month, we have visualised this in the form of a bar graph with a widget which can be used to change the month and the corresponding bar graph with 15 most used words of that month are revisualised.  
+
 
 <div id="hv-chart-1"></div>
 
